@@ -1,0 +1,14 @@
+:root {
+    --primary: hsl(320, 89%, 37%);
+    --primary-dark: hsl(320, 91%, 25%);
+    --secondary: #9A3B26;
+    --tertiary: #EDCFB3;
+  }
+
+
+/* .hero.is-primary {
+    background-color: var(--primary);
+}
+.hero.is-primary a.navbar-item.is-active, .hero.is-primary a.navbar-item:hover {
+    background-color: var(--primary-dark);
+} */

@@ -1,0 +1,18 @@
+{
+  "name": "vkp",
+  "version": "1.0.0",
+  "description": "Vaimne kultuuripärand testsite w Bulma",
+  "main": "sass/mystyles.scss",
+  "dependencies": {},
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "KKG17T",
+  "license": "MIT"
+}
