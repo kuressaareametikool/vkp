@@ -1,9 +1,16 @@
 .Entries {
+    position: relative;
     background: #bada55;
 }
 
 .Entries__nav {
+    position: sticky;
+    top:0;
+    left:0;
     padding: 3vh;
+    height: 100vh;
+    background: white;
+    z-index: 100;
 }
 
 .Entries__nav-item {
