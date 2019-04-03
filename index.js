@@ -3,6 +3,7 @@ import { parseSheet } from "./utils.js";
 import Testcomponent from "./components/Testcomponent.js";
 import Footer from "./components/Footer.js";
 import Intro from "./components/Intro.js";
+import Map from "./components/Map.js";
 
 Vue.config.devtools = true;
 
@@ -11,7 +12,8 @@ new Vue({
   components: {
     Testcomponent,
     Footer,
-    Intro
+    Intro,
+    Map
   },
   data: {
     entries: [],
@@ -111,6 +113,8 @@ new Vue({
 <div style="display: flex; justify-content: space-around;">
   <Testcomponent v-for="(test, i) in 8" :key="'test'+i" />
 </div>
+
+<Map />
 
 <Intro />
 
