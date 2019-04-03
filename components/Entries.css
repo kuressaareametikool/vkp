@@ -1,3 +1,13 @@
 .Entries {
-    /* background: yellow; */
+    background: #bada55;
+}
+
+.Entries__nav {
+    padding: 3vh;
+}
+
+.Entries__nav-item {
+    padding: 2vh;
+    border-bottom: 1px dotted var(--primary);
+
 }
