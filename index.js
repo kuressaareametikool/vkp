@@ -2,6 +2,7 @@ import { parseSheet } from "./utils.js";
 
 import Testcomponent from "./components/Testcomponent.js";
 import Footer from "./components/Footer.js";
+import Intro from "./components/Intro.js";
 
 Vue.config.devtools = true;
 
@@ -9,7 +10,8 @@ new Vue({
   el: "#app",
   components: {
     Testcomponent,
-    Footer
+    Footer,
+    Intro
   },
   data: {
     entries: [],
@@ -72,6 +74,7 @@ new Vue({
     </nav>
   </div>
 
+
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-centered">
@@ -109,6 +112,7 @@ new Vue({
   <Testcomponent v-for="(test, i) in 8" :key="'test'+i" />
 </div>
 
+<Intro />
 
 <Footer />
 
