@@ -1,7 +1,7 @@
 export default {
     template: `
     <div class="Testcomponent">
-      <h1>Halloo!</h1>
+      <h1>Halloo! Uhhuu!</h1>
     </div>
     `
   }

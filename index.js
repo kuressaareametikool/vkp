@@ -34,6 +34,7 @@ new Vue({
         this.entries = parseSheet(res);
       });
   },
+  
   template: `
 <div>
 
