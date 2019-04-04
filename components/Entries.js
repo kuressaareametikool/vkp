@@ -11,7 +11,7 @@ export default {
     methods: { parseSheet },
     mounted() {
         fetch(
-          `https://spreadsheets.google.com/feeds/list/1hRFwFMnXvK47aTzgmCzTQ54gyyhA1jVFrILzWhhu0Dc/1/public/values?alt=json`
+          `https://spreadsheets.google.com/feeds/list/1hRFwFMnXvK47aTzgmCzTQ54gyyhA1jVFrILzWhhu0Dc/2/public/values?alt=json`
         )
           .then(res => res.json())
           .then(res => {
@@ -19,7 +19,7 @@ export default {
             this.entries = parseSheet(res);
           });
           fetch(
-            `https://spreadsheets.google.com/feeds/list/1hRFwFMnXvK47aTzgmCzTQ54gyyhA1jVFrILzWhhu0Dc/2/public/values?alt=json`
+            `https://spreadsheets.google.com/feeds/list/1hRFwFMnXvK47aTzgmCzTQ54gyyhA1jVFrILzWhhu0Dc/1/public/values?alt=json`
           )
             .then(res => res.json())
             .then(res => {
