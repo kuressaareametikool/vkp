@@ -12,16 +12,16 @@ export default {
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">
+          <!-- <a class="navbar-item">
             <h1 class="title is-2">TEST</h1>
-          </a>
+          </a> -->
           <span class="navbar-burger burger" data-target="navbarMenuHeroA" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
             <span></span>
             <span></span>
             <span></span>
           </span>
         </div>
-        <div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': showNav }">
+        <!-- <div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': showNav }">
           <div class="navbar-end">
             <a class="navbar-item is-active">
               Üks
@@ -33,7 +33,7 @@ export default {
               Kolm
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </nav>
   </div>
@@ -41,13 +41,26 @@ export default {
 
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        Title
-      </h1>
-      <h2 class="subtitle">
-        Subtitle
-      </h2>
+    <div class="container">
+      
+      <div class="columns is-vcentered is-variable is-8">
+
+        <div class="column is-one-quarter">
+          <img src="/assets/vkp-logo_pysti.svg" />
+        </div>
+
+        <div class="column">
+          <h1 class="title">
+            EESTI VAIMSE KULTUURIPÄRANDI NIMISTU
+          </h1>
+          <h2 class="subtitle">
+            Lorem ipsum dolor sit amet
+          </h2>
+        </div>
+
+      </div>
+      </div>
+
     </div>
   </div>
 </section>

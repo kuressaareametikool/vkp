@@ -51,11 +51,11 @@ export default {
                     <div class="card column is-half-tablet is-one-third-desktop" v-for="(entry, i) in entries">
                         <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img :src="entry.image" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">
-                            <h1 class="title is-2">{{ entry.name }}</h1>
+                            <h3 class="title is-3">{{ entry.name }}</h3>
                             <div class="content">
                                 {{ entry.text }}
                             </div>
