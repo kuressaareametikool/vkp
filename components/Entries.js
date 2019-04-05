@@ -48,14 +48,14 @@ export default {
             <div class="column is-three-quarters">
 
                 <div class="columns is-multiline">
-                    <div class="card column is-half-tablet is-one-third-desktop" v-for="(entry, i) in entries">
+                    <div class="card column is-half-tablet is-one-third-desktop is-one-quarter-widescreen" v-for="(entry, i) in entries">
                         <div class="card-image">
                             <figure class="image is-4by3">
                                 <img :src="entry.image" alt="Placeholder image">
                             </figure>
                         </div>
                         <div class="card-content">
-                            <h3 class="title is-3">{{ entry.name }}</h3>
+                            <h3 class="title is-4">{{ entry.name }}</h3>
                             <div class="content">
                                 {{ entry.text }}
                             </div>
