@@ -46,7 +46,7 @@ export default {
       <div class="columns is-vcentered is-variable is-8">
 
         <div class="column is-one-quarter">
-          <img src="/assets/vkp-logo_pysti.svg" />
+          <img src="./assets/vkp-logo_pysti.svg" />
         </div>
 
         <div class="column">
