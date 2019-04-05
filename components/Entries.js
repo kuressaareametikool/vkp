@@ -5,7 +5,8 @@ export default {
     data() {
         return {
         entries: [],
-        categories: []
+        categories: [],
+        activeCategory: 0
       }
     },
     methods: { parseSheet },
@@ -36,7 +37,7 @@ export default {
 
             <div class="column is-one-quarter Entries__nav">
 
-                <div v-for="(category, i) in categories" class="Entries__nav-item">
+                <div v-for="(category, i) in categories" class="Entries__nav-item" v-on:click="activeCategory = i" style="cursor:pointer;">
                     <h6 class="title is-6"> 
                         {{ category.name }}
                     </h6>
@@ -46,9 +47,9 @@ export default {
 
 
             <div class="column is-three-quarters">
-
+            
                 <div class="columns is-multiline">
-                    <div class="card column is-half-tablet is-one-third-desktop is-one-quarter-widescreen" v-for="(entry, i) in entries">
+                    <div class="card column is-half-tablet is-one-third-desktop is-one-quarter-widescreen" v-for="(entry, i) in entries.filter(entry => entry.category == activeCategory)">
                         <div class="card-image">
                             <figure class="image is-4by3">
                                 <img :src="entry.image" alt="Placeholder image">
